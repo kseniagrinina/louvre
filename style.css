@@ -1,0 +1,61 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+.container {
+    margin: 150px auto;
+    background-color: transparent;
+    width: 350px;
+    height: 350px;
+    perspective: 1000px;
+  }
+
+.container-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+
+.container:hover .container-inner {
+    transform: rotateY(180deg);
+  }
+
+  .front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+.back {
+    background-color: #C4DCD9;
+    color: black;
+    transform: rotateY(180deg);
+  }
+
+h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 24px;
+      text-transform: uppercase;
+      margin: 60px 0 0 30px;
+  }
+
+.divider {
+    width: 150px;
+    height: 2px;
+    background-color: gray;
+    margin: 10px 0 0 30px;
+}
+
+p {
+    margin: 20px 30px 0 30px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}
